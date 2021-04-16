@@ -7,36 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>survey-form</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 
 
 
     <body>
-        <main>
+    
         <h1 id="title">
-            form-title
+            form-title 
            </h1>
            
            <p id="description">
               form-description
            </p>
-           
+
+           <div id="div-survey-form">
            <form id="survey-form" action="thank-you.html">
 
             <label id="name-label" for="name" >Name</label>
 
             <input id="name" type="text" placeholder="Enter your name" required>
-            <br>
+            
 
             <label id="email-label" for="email">Email</label>
            
            <input id="email" type="email" placeholder="Enter your email" required>
-           <br>
+           
 
            <label id="number-label" for="number">Age (optional)</label>
 
            <input id="number" type="number" min="10" max="99" placeholder="Age">
-           <br>
+           
 
            <label for="dropdown">Select</label>
            <select id="dropdown" >
@@ -45,11 +47,8 @@
                <option value="option2">option2</option>
                <option value="option3">option3</option>
                </select>
-               <br>
-
-               <!--
-                   label element with multiple labelable descendants
-               -->
+               
+            
                <fieldset>
                    <legend>Choose</legend>
                    <label for="radio1">
@@ -61,10 +60,7 @@
                 <label for="radio3">
                  <input id="radio3" value="radio3" type="radio" name="radio">choose3</label>
                </fieldset>
-              
-
-               
-               <br>
+            
 
                <fieldset>
                    <legend>Check</legend>
@@ -79,15 +75,15 @@
                    </label>
                </fieldset>
             
-               <br>
+               
 
                <label for id="text-area" >write your text </label>
-               <br>
+               
                <textarea id="text-area"  name="text" rows="10" cols="40" placeholder="write text"></textarea>
 
 
                </textarea>
-               <br>
+               
 
                <button id="submit" type="submit">Submit</button>
                
@@ -96,9 +92,9 @@
            
 
            </form>
+        </div>
            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-        </main>
     </body>
    
 </html>
