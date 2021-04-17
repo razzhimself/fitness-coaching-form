@@ -3,11 +3,12 @@ html{
 }
 
 body{
-    background-color: #585898;
+   /* background-color: #585898;*/
+   background-color: #003980;
     min-height: 100%;
 
     display: grid;
-    grid-template-rows: 10% 10% 80%;
+    grid-template-rows: 5% 10% 85%;
     grid-template-columns: 25%  50% 25%;
     grid-template-areas: 
     ". title ."
@@ -25,6 +26,8 @@ body{
     text-align: center;
     grid-area: title;
     color: white;
+    margin: 2.5%;
+    
 
 
 }
@@ -33,6 +36,8 @@ body{
     text-align: center;
     grid-area: description;
     color: white;
+    font-size:x-large;
+    margin: 2.5%;
 
 }
 
@@ -42,11 +47,29 @@ body{
     display: flex;
     flex-direction: column;
     grid-area: form;
-    background-color: #252546;
+    background-color: #00224D;
+    /* background-color: #252546; */
     padding: 5%;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     color: white;
+}
+
+#personal-info-fieldset{
+    display: flex;
+    flex-direction: column; 
+    padding: 1.5%; 
+    margin-bottom: 2.5%;
+
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white;
+}
+#personal-info-legend{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
 }
   
 
@@ -61,7 +84,7 @@ body{
     padding: 1.5%;
 
     border-style: solid;
-    border-width: 2.5%px;
+    border-width: 2.5%;
     border-radius: 10px;
     border-color: white;
     
@@ -79,7 +102,7 @@ body{
     padding: 1.5%;
 
     border-style: solid;
-    border-width: 2.5%px;
+    border-width: 2.5%;
     border-radius: 10px;
     border-color: white;
 }
@@ -94,13 +117,61 @@ body{
     padding: 1.5%;
 
     border-style: solid;
-    border-width: 2.5%px;
+    border-width: 2.5%;
     border-radius: 10px;
     border-color: white;
 }
 
+#weight-label{
+    font-weight: bold;
+}
+
+#weight{
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    padding: 1.5%;
+
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#height-label{
+    font-weight: bold;
+}
+
+#height{
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    padding: 1.5%;
+
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white;  
+}
+
+#goals-fieldset{
+    display: flex;
+    flex-direction: column; 
+    padding: 1.5%; 
+    margin-bottom: 2.5%;
+
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#goals-legend{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
 #dropdown-label{
-    font-weight: bold; 
+    font-weight: bold;  
 }
 
 #dropdown{
@@ -109,9 +180,12 @@ body{
     padding: 1.5%;
 
     border-style: solid;
-    border-width: 2.5%px;
+    border-width: 2.5%;
     border-radius: 10px;
     border-color: white;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #radio-fieldset{
@@ -120,15 +194,12 @@ body{
     padding: 1.5%; 
     margin-bottom: 2.5%;
 
-    border-style: solid;
-    border-width: 2.5%px;
-    border-radius: 10px;
-    border-color: white;
+    border: 0;
 
 }
-
+/*
 #radio-legend{
-    font-weight: bold;
+    
 }
 
 #radio1{
@@ -142,17 +213,65 @@ body{
 #radio3{
 
 }
+*/
+#goals-why-label{
+    font-weight: bold;
+    margin-bottom: 2.5%;
+}
+
+#goals-why-text {
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white;
+    resize: none;
+    margin-bottom: 2.5%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#goals-what-label{
+    font-weight: bold;
+    margin-bottom: 2.5%;
+}
+
+#goals-what-text {
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white;
+    resize: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#add-info-fieldset{
+    display: flex;
+    flex-direction: column; 
+    padding: 1.5%; 
+    margin-bottom: 2.5%;
+
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#add-info-legend{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
 
 #checkbox-fieldset{
     display: flex;
     flex-direction: column; 
-    padding: 1.5%;
+    padding: 1.5%; 
     margin-bottom: 2.5%;
 
-    border-style: solid;
-    border-width: 2.5%px;
-    border-radius: 10px;
-    border-color: white;
+    border: 0;
 
 }
 
@@ -172,24 +291,49 @@ font-weight: bold;
     float: left;
 }
 
+#time-label{
+    font-weight: bold;
+    margin-top: 2.5%;
+
+}
+
+#time{
+    margin-top: 1%;
+    padding: 1.5%;
+
+    border-style: solid;
+    border-width: 2.5%;
+    border-radius: 10px;
+    border-color: white; 
+}
+
 #text-area-label{
     font-weight: bold;
+    margin-bottom: 2.5%;
 }
 
 #text-area{
 
     border-style: solid;
-    border-width: 2.5%px;
+    border-width: 2.5%;
     border-radius: 10px;
     border-color: white;
+    resize: none;
+
+    height: 75px;
+
+
    
 }
 
 #submit{
 margin-top: 2.5%;
 padding: 1.5%;
+font-weight: bold;
+font-size: 24px;
+    
 
-background-color: #37AF65;
+background-color: #003980;
 
 border-style: solid;
     border-radius: 10px;

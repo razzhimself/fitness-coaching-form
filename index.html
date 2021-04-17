@@ -15,71 +15,132 @@
     <body>
 
         <h1 id="title">
-            form-title 
+            Personalized fitness coaching form
            </h1>
            
            <p id="description">
-              form-description
+              In order to give you the best coaching experience and<br>
+             the most effective one,it needs to be personalized just for you<br>
+              please fill out the following form
            </p>
 
-         <!-- <div id="div-survey-form"> -->
+        
            <form id="survey-form" action="thank-you.html">
 
-            <label  id="name-label" for="name" >Name</label>
+            <fieldset id="personal-info-fieldset">
+                <legend id="personal-info-legend">Personal information </legend>
+                    <label  id="name-label" for="name" >Name</label>
 
-            <input  id="name" type="text" placeholder="Enter your name" required>
-            
+                    <input  id="name" type="text" placeholder="Enter your name" required>
+                    
+        
+                    <label id="email-label" for="email">Email</label>
+                   
+                   <input id="email" type="email" placeholder="Enter your email" required>
+                   
+        
+                   <label id="number-label" for="number">Age</label>
+        
+                   <input id="number" type="number" min="10" max="99" placeholder="Age">
 
-            <label id="email-label" for="email">Email</label>
-           
-           <input id="email" type="email" placeholder="Enter your email" required>
-           
+                   <fieldset id="radio-fieldset">
+                    <legend id="radio-legend">Gender</legend>
+                    <label for="radio1">
+                     <input id="radio1" value="Male" type="radio" name="gender">Male</label>
+                 
+                 <label for="radio2">
+                     <input id="radio2" value="Female" type="radio" name="gender">Female</label>
+                 
+                </fieldset>
 
-           <label id="number-label" for="number">Age (optional)</label>
+                <label id="weight-label" for="number">Weight</label>
+        
+                   <input id="weight" type="number" min="0" max="150" placeholder="Weight (KG)">
 
-           <input id="number" type="number" min="10" max="99" placeholder="Age">
-           
+                   <label id="height-label" for="number">Height</label>
+        
+                   <input id="height" type="number" min="0" max="300" placeholder="Height (CM)">
+                
+            </fieldset>
 
-           <label id="dropdown-label" for="dropdown">Select</label>
+            <fieldset id="goals-fieldset">
+                <legend id="goals-legend">Goals</legend>
+                <label id="dropdown-label" for="dropdown">
+                    What is your primary fitness goal?</label>
            <select id="dropdown" >
-               <option value="select" disabled selected >Select</option>
-               <option value="option1">option1</option>
-               <option value="option2">option2</option>
-               <option value="option3">option3</option>
+               <option value="select" disabled selected >Select primary fitness goal</option>
+               <option value="Muscle">Gain Muscle</option>
+               <option value="Weight">Lose Weight</option>
+               <option value="Strong">Get Stronger</option>
                </select>
-               
-            
-               <fieldset id="radio-fieldset">
-                   <legend id="radio-legend">Choose</legend>
-                   <label for="radio1">
-                    <input id="radio1" value="radio1" type="radio" name="radio">choose1</label>
-                
-                <label for="radio2">
-                    <input id="radio2" value="radio2" type="radio" name="radio">choose2</label>
-                
-                <label for="radio3">
-                 <input id="radio3" value="radio3" type="radio" name="radio">choose3</label>
-               </fieldset>
-            
 
-               <fieldset id="checkbox-fieldset">
-                   <legend id="checkbox-legend">Check</legend>
-                   <label for id="checkbox1"> checkbox1
-                    <input id="checkbox1" value="checkbox1" type="checkbox" name="name">
-                   </label>
-                   <label for id="checkbox2"> checkbox2
-                    <input id="checkbox2" value="checkbox2" type="checkbox" name="name">
-                   </label>
-                   <label for id="checkbox3"> checkbox3
-                    <input id="checkbox3" value="checkbox3" type="checkbox" name="name">
-                   </label>
-               </fieldset>
-            
+               <label id="goals-why-label" for id="goals-why-text" >
+                Why do you want to achieve this goal? What will reaching this goal help you achieve?
+            </label>
+               
+               <textarea id="goals-why-text"  name="goals-why" >
+                   
+               </textarea>
                
 
-               <label id="text-area-label" for id="text-area" >write your text </label>
+               <label id="goals-what-label" for id="goals-what-text" >
+                What is preventing you from achieving this goal on your own?
+            </label>
                
-               <textarea id="text-area"  name="text" rows="10" cols="40" placeholder="write text"></textarea>
+               <textarea id="goals-what-text"  name="goals-text" >
+                   
+               </textarea>
+
+
+               </textarea>
+            </fieldset>
+
+            <fieldset id="add-info-fieldset">
+                <legend id="add-info-legend">Additional information</legend>
+                <fieldset id="checkbox-fieldset">
+                    <legend id="checkbox-legend">Where do you prefer (and can) to train?</legend>
+                    <label for id="checkbox1"> gym
+                     <input id="checkbox1" value="gym" type="checkbox" name="name">
+                    </label>
+                    <label for id="checkbox2"> ourdoor
+                     <input id="checkbox2" value="outdoor" type="checkbox" name="name">
+                    </label>
+                    <label for id="checkbox3"> home
+                     <input id="checkbox3" value="home" type="checkbox" name="name">
+                    </label>
+
+                    <label id="time-label" for="time">
+                        How many minutes per day do you typically have to train?*
+                    </label>
+        
+                   <input id="time" type="number" min="0" max="1440" >
+
+                </fieldset>
+
+            </fieldset>
+
+
+         
+
+
+            
+           
+
+           
+               
+            
+               
+            
+
+
+            
+               
+
+               <label id="text-area-label" for id="text-area" >
+                   Anything else you want us know?
+            </label>
+               
+               <textarea id="text-area"  name="text"  ></textarea>
 
 
                </textarea>
@@ -88,11 +149,7 @@
                <button id="submit" type="submit">Submit</button>
                
                
-      
-           
-
            </form>
-        <!-- </div> -->
            
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
