@@ -1,30 +1,30 @@
 html{
     height: 100%;
 }
-body{ 
-    background-color: #669992;
-    min-height: 100vh;
-    /* display: flex;
-    flex-direction: row;
-    justify-items: center; */
-    
-    
+
+body{
+    background-color: #585898;
+    min-height: 100%;
 
     display: grid;
-    grid-template-rows: 10vh 10vh 80vh;
-    grid-template-columns: 30vw  40vw 30vw;
+    grid-template-rows: 10% 10% 80%;
+    grid-template-columns: 25%  50% 25%;
     grid-template-areas: 
     ". title ."
     ". description ."
-    ". div .";   
+    ". form .";
+}
+
+
     
 
-}
+       
 
 
 #title{
     text-align: center;
     grid-area: title;
+    color: white;
 
 
 }
@@ -32,86 +32,103 @@ body{
 #description{
     text-align: center;
     grid-area: description;
-
+    color: white;
 
 }
 
-/* #div-survey-form{
-     grid-area: div;
-    background-color: #99666D;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-self: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-} */
-
 #survey-form{
-    width: 90%;
+    max-width: 100%;
+  height: auto;
     display: flex;
     flex-direction: column;
-    grid-area: div;
-    background-color: #99666D;
+    grid-area: form;
+    background-color: #252546;
     padding: 5%;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
-    border-width: 5%;
-    border-style: solid;
+    color: white;
+}
   
-}
-label{
 
-}
-input{
-    margin-bottom: 5%;
-}
-
-select{
-    margin-bottom: 5%;
-
-}
-
-fieldset{
-    margin-bottom: 5%;
-}
-textarea{
-
-}
-
-button{
-    background-color: rgb(111, 150, 73);
-}
-
-
-/*
 #name-label{
+    font-weight: bold;
 
 }
 
 #name{
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    padding: 1.5%;
+
+    border-style: solid;
+    border-width: 2.5%px;
+    border-radius: 10px;
+    border-color: white;
+    
 
 }
 
-#email-label{
 
+#email-label{
+    font-weight: bold;
 }
 
 #email{
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    padding: 1.5%;
 
+    border-style: solid;
+    border-width: 2.5%px;
+    border-radius: 10px;
+    border-color: white;
 }
 
 #number-label{
-
+    font-weight: bold;
 }
 
 #number{
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    padding: 1.5%;
 
+    border-style: solid;
+    border-width: 2.5%px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#dropdown-label{
+    font-weight: bold; 
 }
 
 #dropdown{
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    padding: 1.5%;
 
+    border-style: solid;
+    border-width: 2.5%px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#radio-fieldset{
+    display: flex;
+    flex-direction: column; 
+    padding: 1.5%; 
+    margin-bottom: 2.5%;
+
+    border-style: solid;
+    border-width: 2.5%px;
+    border-radius: 10px;
+    border-color: white;
+
+}
+
+#radio-legend{
+    font-weight: bold;
 }
 
 #radio1{
@@ -126,25 +143,59 @@ button{
 
 }
 
-#checkbox1{
+#checkbox-fieldset{
+    display: flex;
+    flex-direction: column; 
+    padding: 1.5%;
+    margin-bottom: 2.5%;
 
+    border-style: solid;
+    border-width: 2.5%px;
+    border-radius: 10px;
+    border-color: white;
+
+}
+
+#checkbox-legend{
+font-weight: bold;
+}
+
+#checkbox1{
+    float: left;
 }
 
 #checkbox2{
-
+    float: left;
 }
 
 #checkbox3{
+    float: left;
+}
 
+#text-area-label{
+    font-weight: bold;
 }
 
 #text-area{
 
+    border-style: solid;
+    border-width: 2.5%px;
+    border-radius: 10px;
+    border-color: white;
+   
 }
 
 #submit{
+margin-top: 2.5%;
+padding: 1.5%;
 
+background-color: #37AF65;
+
+border-style: solid;
+    border-radius: 10px;
+    color: white;
+    
 }
 
-*/
+
 

@@ -40,7 +40,7 @@
            <input id="number" type="number" min="10" max="99" placeholder="Age">
            
 
-           <label for="dropdown">Select</label>
+           <label id="dropdown-label" for="dropdown">Select</label>
            <select id="dropdown" >
                <option value="select" disabled selected >Select</option>
                <option value="option1">option1</option>
@@ -49,8 +49,8 @@
                </select>
                
             
-               <fieldset>
-                   <legend>Choose</legend>
+               <fieldset id="radio-fieldset">
+                   <legend id="radio-legend">Choose</legend>
                    <label for="radio1">
                     <input id="radio1" value="radio1" type="radio" name="radio">choose1</label>
                 
@@ -62,8 +62,8 @@
                </fieldset>
             
 
-               <fieldset>
-                   <legend>Check</legend>
+               <fieldset id="checkbox-fieldset">
+                   <legend id="checkbox-legend">Check</legend>
                    <label for id="checkbox1"> checkbox1
                     <input id="checkbox1" value="checkbox1" type="checkbox" name="name">
                    </label>
@@ -77,7 +77,7 @@
             
                
 
-               <label for id="text-area" >write your text </label>
+               <label id="text-area-label" for id="text-area" >write your text </label>
                
                <textarea id="text-area"  name="text" rows="10" cols="40" placeholder="write text"></textarea>
 
