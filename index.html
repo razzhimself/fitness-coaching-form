@@ -1,147 +1,171 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>survey-form</title>
-    <link href="styles/style.css" rel="stylesheet">
-</head>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
 
+  <body class="background-image">
+    <main>
+      <h1 id="title">Fitness Coaching Form</h1>
 
+      <p id="description">
+        In order to give you the best coaching experience and<br />
+        the most effective one,it needs to be personalized just for you.<br />
+        please fill out the following form.
+      </p>
 
-    <body class="background-image">
+      <div id="div-form">
+        <form id="survey-form" action="thank-you.html">
+          <fieldset id="personal-info-fieldset">
+            <legend id="personal-info-legend">Personal information</legend>
+            <label id="name-label" for="name">Name</label>
 
-        <main>
-            
-                <h1 id="title">
-                    Fitness Coaching Form
-                   </h1>
-            
-        
-           <p id="description">
-            In order to give you the best coaching experience and<br>
-           the most effective one,it needs to be personalized just for you.<br>
-            please fill out the following form.
-         </p>
-        
-           
-        <div id="div-form">
-        
-           <form id="survey-form" action="thank-you.html">
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
 
-            <fieldset id="personal-info-fieldset">
-                <legend id="personal-info-legend">Personal information </legend>
-                    <label  id="name-label" for="name" >Name</label>
+            <label id="email-label" for="email">Email</label>
 
-                    <input  id="name" type="text" placeholder="Enter your name" required>
-                    
-        
-                    <label id="email-label" for="email">Email</label>
-                   
-                   <input id="email" type="email" placeholder="Enter your email" required>
-                   
-        
-                   <label id="number-label" for="number">Age</label>
-        
-                   <input id="number" type="number" min="10" max="99" placeholder="Age">
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
 
-                   <fieldset id="radio-fieldset">
-                    <legend id="radio-legend">Gender</legend>
-                    <label for="radio1">
-                     <input id="radio1" value="Male" type="radio" name="gender">Male</label>
-                 
-                 <label for="radio2">
-                     <input id="radio2" value="Female" type="radio" name="gender">Female</label>
-                 
-                </fieldset>
+            <label id="number-label" for="number">Age</label>
 
-                <label id="weight-label" for="number">Weight</label>
-        
-                   <input id="weight" type="number" min="0" max="150" placeholder="Weight (KG)">
+            <input
+              id="number"
+              type="number"
+              min="10"
+              max="99"
+              placeholder="Age"
+            />
 
-                   <label id="height-label" for="number">Height</label>
-        
-                   <input id="height" type="number" min="0" max="300" placeholder="Height (CM)">
-                
+            <fieldset id="radio-fieldset">
+              <legend id="radio-legend">Gender</legend>
+              <label for="radio1">
+                <input
+                  id="radio1"
+                  value="Male"
+                  type="radio"
+                  name="gender"
+                />Male</label
+              >
+
+              <label for="radio2">
+                <input
+                  id="radio2"
+                  value="Female"
+                  type="radio"
+                  name="gender"
+                />Female</label
+              >
             </fieldset>
 
-            <fieldset id="goals-fieldset">
-                <legend id="goals-legend">Goals</legend>
-                <label id="dropdown-label" for="dropdown">
-                    What is your primary fitness goal?</label>
-           <select id="dropdown" >
-               <option value="select" disabled selected >Select primary fitness goal</option>
-               <option value="Muscle">Gain Muscle</option>
-               <option value="Weight">Lose Weight</option>
-               <option value="Strong">Get Stronger</option>
-               </select>
+            <label id="weight-label" for="number">Weight</label>
 
-               <label id="goals-why-label" for="goals-why-text" >
-                Why do you want to achieve this goal? <br>
-                What will reaching this goal help you achieve?
+            <input
+              id="weight"
+              type="number"
+              min="0"
+              max="150"
+              placeholder="Weight (KG)"
+            />
+
+            <label id="height-label" for="number">Height</label>
+
+            <input
+              id="height"
+              type="number"
+              min="0"
+              max="300"
+              placeholder="Height (CM)"
+            />
+          </fieldset>
+
+          <fieldset id="goals-fieldset">
+            <legend id="goals-legend">Goals</legend>
+            <label id="dropdown-label" for="dropdown">
+              What is your primary fitness goal?</label
+            >
+            <select id="dropdown">
+              <option value="select" disabled selected>
+                Select primary fitness goal
+              </option>
+              <option value="Muscle">Gain Muscle</option>
+              <option value="Weight">Lose Weight</option>
+              <option value="Strong">Get Stronger</option>
+            </select>
+
+            <label id="goals-why-label" for="goals-why-text">
+              Why do you want to achieve this goal? <br />
+              What will reaching this goal help you achieve?
             </label>
-            <textarea id="goals-why-text"  name="goals-why" >
-                   
-            </textarea>
-               
-               
-               
+            <textarea id="goals-why-text" name="goals-why"> </textarea>
 
-               <label id="goals-what-label" for="goals-what-text"   >
-                What is preventing you from achieving this goal on your own?
+            <label id="goals-what-label" for="goals-what-text">
+              What is preventing you from achieving this goal on your own?
             </label>
-            <textarea id="goals-what-text"  name="goals-text" >
-                   
-            </textarea>
-               
-               
+            <textarea id="goals-what-text" name="goals-text"> </textarea>
+          </fieldset>
 
+          <fieldset id="add-info-fieldset">
+            <legend id="add-info-legend">Additional information</legend>
+            <fieldset id="checkbox-fieldset">
+              <legend id="checkbox-legend">
+                Where do you prefer (and can) to train?
+              </legend>
+              <label for="checkbox1">
+                gym
+                <input id="checkbox1" value="gym" type="checkbox" name="name" />
+              </label>
+              <label for="checkbox2">
+                ourdoor
+                <input
+                  id="checkbox2"
+                  value="outdoor"
+                  type="checkbox"
+                  name="name"
+                />
+              </label>
+              <label for="checkbox3">
+                home
+                <input
+                  id="checkbox3"
+                  value="home"
+                  type="checkbox"
+                  name="name"
+                />
+              </label>
 
-               
+              <label id="time-label" for="time">
+                How many minutes per day do you typically have to train?*
+              </label>
+
+              <input id="time" type="number" min="0" max="1440" />
             </fieldset>
+          </fieldset>
 
-            <fieldset id="add-info-fieldset">
-                <legend id="add-info-legend">Additional information</legend>
-                <fieldset id="checkbox-fieldset">
-                    <legend id="checkbox-legend">Where do you prefer (and can) to train?</legend>
-                    <label for="checkbox1"> gym
-                     <input id="checkbox1" value="gym" type="checkbox" name="name">
-                    </label>
-                    <label for="checkbox2"> ourdoor
-                     <input id="checkbox2" value="outdoor" type="checkbox" name="name">
-                    </label>
-                    <label for="checkbox3"> home
-                     <input id="checkbox3" value="home" type="checkbox" name="name">
-                    </label>
+          <label id="text-area-label" for="text-area">
+            Anything else you want us know?
+          </label>
 
-                    <label id="time-label" for="time">
-                        How many minutes per day do you typically have to train?*
-                    </label>
-        
-                   <input id="time" type="number" min="0" max="1440" >
+          <textarea id="text-area" name="text"></textarea>
 
-                </fieldset>
-
-            </fieldset>
-
-               <label id="text-area-label" for="text-area" >
-                   Anything else you want us know?
-            </label>
-               
-               <textarea id="text-area"  name="text"  ></textarea>
-
-               
-
-               <button id="submit" type="submit">Submit</button>
-               
-               
-           </form>
-        </div>
-        </main>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </body>
-   
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>

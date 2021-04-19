@@ -1,228 +1,201 @@
-
 /*html{
     height: 100%; 
 }*/
 
- body{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-    min-height: 100vh;
-
-
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-
-
-
-
-.background-image{
-    /* background-color: #585898;*/
-    background-image: url(https://raw.githubusercontent.com/razzhimself/survey-form/main/images/grey-gym.jpg); 
-    height: 100%;
-    background-position: center;
-    
-    background-repeat: no-repeat;
-    background-size: cover; 
-    
+.background-image {
+  background-color: #8f8d98;
+  background-image: url(https://raw.githubusercontent.com/razzhimself/survey-form/main/images/grey-gym.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-main{  
-justify-self: center;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: 
+main {
+  justify-self: center;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
     "title"
     "des"
     "form";
-    
 }
 
+#title {
+  text-align: center;
+  font-size: xxx-large;
+  color: #3e4854;
+  grid-area: title;
 
-#title{
-    text-align: center;
-    font-size: xxx-large;
-    color: #3E4854;
-    grid-area: title;
-    
-
-    text-shadow: -2.5px 0 white, 0 2.5px white, 2.5px 0 white, 0 -2.5px white;
-
-   
-    
+  text-shadow: -2.5px 0 white, 0 2.5px white, 2.5px 0 white, 0 -2.5px white;
 }
 
-
-#description{
-    text-align: center;
-    font-size: x-large;
-    color: #3E4854;
-    text-shadow: -0.5px 0 #3E4854, 0 0.5px #3E4854, 0.5px 0 #3E4854, 0 -0.5px #3E4854;
-    grid-area: des;
-
+#description {
+  text-align: center;
+  font-size: x-large;
+  color: #3e4854;
+  text-shadow: -0.5px 0 #3e4854, 0 0.5px #3e4854, 0.5px 0 #3e4854,
+    0 -0.5px #3e4854;
+  grid-area: des;
 }
 
-#div-form{
-    grid-area: form;
-
+#div-form {
+  grid-area: form;
 }
 
-#survey-form{
-    max-width: 100%;
-  min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /*background-image: url(/images/gym.jpg);*/
-    background-color: #3E4854;
-    /* background-color: #252546; */
-    padding: 5%;
-    border-radius: 5%;
-    color: white;
-    
+#survey-form {
+  max-width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #3e4854;
+  padding: 5%;
+  border-radius: 5%;
+  color: white;
 }
 
-#personal-info-fieldset{
-    display: flex;
-    flex-direction: column; 
-    padding: 1.5%; 
-    margin-bottom: 2.5%;
+#personal-info-fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  margin-bottom: 2.5%;
 
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
-#personal-info-legend{
-    font-weight: bold;
-    font-size: 28px;
-    text-align: center;
-}
-  
-
-#name-label{
-    font-weight: bold;
-
+#personal-info-legend {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
 }
 
-#name{
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-    padding: 1.5%;
-
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
-    
-
+#name-label {
+  font-weight: bold;
 }
 
+#name {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  padding: 1.5%;
 
-#email-label{
-    font-weight: bold;
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#email{
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-    padding: 1.5%;
-
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
+#email-label {
+  font-weight: bold;
 }
 
-#number-label{
-    font-weight: bold;
+#email {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  padding: 1.5%;
+
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#number{
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-    padding: 1.5%;
-
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
+#number-label {
+  font-weight: bold;
 }
 
-#weight-label{
-    font-weight: bold;
+#number {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  padding: 1.5%;
+
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#weight{
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-    padding: 1.5%;
-
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
+#weight-label {
+  font-weight: bold;
 }
 
-#height-label{
-    font-weight: bold;
+#weight {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  padding: 1.5%;
+
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#height{
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-    padding: 1.5%;
-
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;  
+#height-label {
+  font-weight: bold;
 }
 
-#goals-fieldset{
-    display: flex;
-    flex-direction: column; 
-    padding: 1.5%; 
-    margin-bottom: 2.5%;
+#height {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  padding: 1.5%;
 
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#goals-legend{
-    font-weight: bold;
-    font-size: 28px;
-    text-align: center;
+#goals-fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  margin-bottom: 2.5%;
+
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#dropdown-label{
-    font-weight: bold;  
+#goals-legend {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
 }
 
-#dropdown{
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-    padding: 1.5%;
-
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
-
-    display: flex;
-    flex-direction: column;
+#dropdown-label {
+  font-weight: bold;
 }
 
-#radio-fieldset{
-    display: flex;
-    flex-direction: column; 
-    padding: 1.5%; 
-    margin-bottom: 2.5%;
+#dropdown {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  padding: 1.5%;
 
-    border: 0;
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 
+  display: flex;
+  flex-direction: column;
+}
+
+#radio-fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  margin-bottom: 2.5%;
+
+  border: 0;
 }
 /*
 #radio-legend{
@@ -241,142 +214,137 @@ justify-self: center;
 
 }
 */
-#goals-why-label{
-    font-weight: bold;
-    margin-bottom: 2.5%;
+#goals-why-label {
+  font-weight: bold;
+  margin-bottom: 2.5%;
 }
 
 #goals-why-text {
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
-    resize: none;
-    margin-bottom: 2.5%;
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
+  resize: none;
+  margin-bottom: 2.5%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-#goals-what-label{
-    font-weight: bold;
-    margin-bottom: 2.5%;
+#goals-what-label {
+  font-weight: bold;
+  margin-bottom: 2.5%;
 }
 
 #goals-what-text {
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
-    resize: none;
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
+  resize: none;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-#add-info-fieldset{
-    display: flex;
-    flex-direction: column; 
-    padding: 1.5%; 
-    margin-bottom: 2.5%;
+#add-info-fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  margin-bottom: 2.5%;
 
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#add-info-legend{
-    font-weight: bold;
-    font-size: 28px;
-    text-align: center;
+#add-info-legend {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
 }
 
-#checkbox-fieldset{
-    display: flex;
-    flex-direction: column; 
-    padding: 1.5%; 
-    margin-bottom: 2.5%;
+#checkbox-fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  margin-bottom: 2.5%;
 
-    border: 0;
-
+  border: 0;
 }
 
-#checkbox-legend{
-font-weight: bold;
+#checkbox-legend {
+  font-weight: bold;
 }
 
-#checkbox1{
-    float: left;
+#checkbox1 {
+  float: left;
 }
 
-#checkbox2{
-    float: left;
+#checkbox2 {
+  float: left;
 }
 
-#checkbox3{
-    float: left;
+#checkbox3 {
+  float: left;
 }
 
-#time-label{
-    font-weight: bold;
-    margin-top: 2.5%;
-
+#time-label {
+  font-weight: bold;
+  margin-top: 2.5%;
 }
 
-#time{
-    margin-top: 1%;
-    padding: 1.5%;
+#time {
+  margin-top: 1%;
+  padding: 1.5%;
 
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white; 
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
 }
 
-#text-area-label{
-    font-weight: bold;
-    margin-bottom: 2.5%;
+#text-area-label {
+  font-weight: bold;
+  margin-bottom: 2.5%;
 }
 
-#text-area{
-
-    border-style: solid;
-    border-width: 2.5%;
-    border-radius: 10px;
-    border-color: white;
-    resize: none;
-    min-height: 5%;
-    
-
-
-   
+#text-area {
+  border-style: solid;
+  border-width: 2.5%;
+  border-radius: 10px;
+  border-color: white;
+  resize: none;
+  min-height: 5%;
 }
 
-#submit{
-margin-top: 2.5%;
-padding: 1.5%;
-font-weight: bold;
-font-size: 24px;
-margin: 2.5%;
-    
+#submit {
+  margin-top: 2.5%;
+  padding: 1.5%;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 2.5%;
 
-background-color: #37AF65;
+  background-color: #37af65;
 
-border-style: solid;
-    border-radius: 10px;
-    color: white;
-    
+  border-style: solid;
+  border-radius: 10px;
+  color: white;
 }
 
-#thank-you{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 767px) {
-    html {
-       background-image: url(smaller-image.jpg);
-    }
+@media (min-width: 1024px) and (max-width: 2550px) {
+  .background-image {
+    background-color: #8f8d98;
+    background-image: url(/images/grey-gym-medium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
+}
