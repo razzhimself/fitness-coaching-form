@@ -1,58 +1,84 @@
-html{
+
+/*html{
+    height: 100%; 
+}*/
+
+ body{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+    min-height: 100vh;
+
+
+}
+
+
+
+
+
+.background-image{
+    /* background-color: #585898;*/
+    background-image: url(/images/grey-gym.jpg); 
     height: 100%;
-}
-
-body{
-   /* background-color: #585898;*/
-   background-color: #003980;
-    min-height: 100%;
-
-    display: grid;
-    grid-template-rows: 5% 10% 85%;
-    grid-template-columns: 25%  50% 25%;
-    grid-template-areas: 
-    ". title ."
-    ". description ."
-    ". form .";
-}
-
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
     
+}
 
-       
+main{  
+justify-self: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title"
+    "des"
+    "form";
+    
+}
 
 
 #title{
     text-align: center;
+    font-size: xxx-large;
+    color: #3E4854;
     grid-area: title;
-    color: white;
-    margin: 2.5%;
     
 
+    text-shadow: -2.5px 0 white, 0 2.5px white, 2.5px 0 white, 0 -2.5px white;
 
+   
+    
 }
+
 
 #description{
     text-align: center;
-    grid-area: description;
-    color: white;
-    font-size:x-large;
-    margin: 2.5%;
+    font-size: x-large;
+    color: #3E4854;
+    text-shadow: -0.5px 0 #3E4854, 0 0.5px #3E4854, 0.5px 0 #3E4854, 0 -0.5px #3E4854;
+    grid-area: des;
+
+}
+
+#div-form{
+    grid-area: form;
 
 }
 
 #survey-form{
     max-width: 100%;
-  height: auto;
+  min-height: 100vh;
     display: flex;
     flex-direction: column;
-    grid-area: form;
-    background-color: #00224D;
+    /*background-image: url(/images/gym.jpg);*/
+    background-color: #3E4854;
     /* background-color: #252546; */
     padding: 5%;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-radius: 5%;
     color: white;
+    
 }
 
 #personal-info-fieldset{
@@ -319,8 +345,8 @@ font-weight: bold;
     border-radius: 10px;
     border-color: white;
     resize: none;
-
-    height: 75px;
+    min-height: 5%;
+    
 
 
    
@@ -331,9 +357,10 @@ margin-top: 2.5%;
 padding: 1.5%;
 font-weight: bold;
 font-size: 24px;
+margin: 2.5%;
     
 
-background-color: #003980;
+background-color: #37AF65;
 
 border-style: solid;
     border-radius: 10px;
@@ -341,5 +368,12 @@ border-style: solid;
     
 }
 
+#thank-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-
+@media (max-width:480px){
+    
+}
