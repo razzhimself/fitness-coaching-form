@@ -1,0 +1,35 @@
+[33mcommit 636d123c16bac94c14365076d9f32a9232a6e522[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Raz Kushnir <razzhimself@gmail.com>
+Date:   Sat Apr 17 14:04:16 2021 +0300
+
+    added some style to the form
+
+[33mcommit c9bc53c1e262a24f961f8c6ee008935ba84ad546[m
+Author: Raz Kushnir <razzhimself@gmail.com>
+Date:   Sat Apr 17 10:37:45 2021 +0300
+
+    better layout structure
+
+[33mcommit 92c9564ffbe8dd241a1053ed0b5133a9c52765a4[m
+Author: Raz Kushnir <razzhimself@gmail.com>
+Date:   Fri Apr 16 11:29:35 2021 +0300
+
+    initial layout and css file
+
+[33mcommit bac06c02c83bb803598f506742b0833086ec1eeb[m
+Author: Raz Kushnir <razzhimself@gmail.com>
+Date:   Thu Apr 15 13:14:48 2021 +0300
+
+    initial structure for thank-you page when form is submitted
+
+[33mcommit aa667367c2b3dfabad6e096d914db6a4ae59a18b[m
+Author: Raz Kushnir <razzhimself@gmail.com>
+Date:   Thu Apr 15 12:56:17 2021 +0300
+
+    initial form structure
+
+[33mcommit 5b0aa0e24ea6ef71d45fc155fc566f1254205ee4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Raz Kushnir <65572534+razzhimself@users.noreply.github.com>
+Date:   Thu Apr 15 08:04:46 2021 +0300
+
+    Initial commit
